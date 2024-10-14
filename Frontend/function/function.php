@@ -2,11 +2,11 @@
 
 function getAliments($mysqlClient, $sort = null)
 {
-    $query = "SELECT * FROM aliment";
+    $query = "SELECT * FROM Foods";
 
     if ($sort == 'calories') {
         $query .= " ORDER BY calories ASC";
-    } elseif ($sort == 'sucre') {
+    } elseif ($sort == 'sucres') {
         $query .= " ORDER BY sucre ASC";
     } elseif ($sort == 'nom') {
         $query .= " ORDER BY nom ASC";
